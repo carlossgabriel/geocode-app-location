@@ -168,7 +168,7 @@ function initMap() {
     var geocoder = new google.maps.Geocoder;
     server.on('address', (address) => {
         geocodeAddress(geocoder, map, address)
-        console.log(`received from the server: ${address}`)
+        console.log(`received from the client: ${address}`)
     })
 }
 

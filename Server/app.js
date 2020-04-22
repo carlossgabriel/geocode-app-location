@@ -23,7 +23,6 @@ io.on('connect', (socket) => {
     // Function for emit the data received from the client
     socket.on('data', (data) => {
         console.log(`Address received, ${data}`);
-        console.log(socket.id);
         socket.broadcast.emit('address', data);
     });
 });
