@@ -11,8 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npm server",
-    "start": "node server.js"
+    "pretest": "cls",
+    "test": "node ./app.js"
   },
   "author": "Carlos Gabriel",
   "license": "ISC"

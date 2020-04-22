@@ -23,11 +23,11 @@ Repeat the process on Client folder
 ## Run:
 1. change directory to ./Server:
 
-```$ node .\app.js ```
+```$ npm test```
 
 2. change directory to ./Client:
 
-```$ node .\app.js ```
+```$ npm test ```
 
 Open your browser and ~~VRAU~~ run the localhost for the Server(map) and the Client(search box)
 
