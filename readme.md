@@ -1,4 +1,4 @@
-#**Geocode with sockets**
+# **Geocode with sockets**
 
 For this project, two applications were created, each one with a screen;
 
@@ -15,13 +15,18 @@ Prerequisites for the project:
 When the project folder is open, you have to update the node_nodules:
 
 Change the dir. to the Server folder , and run the code bellow in the terminal:
+
 ```$ npm update ```
+
 Repeat the process on Client folder
 
-###Run:
-1. ./Server:
+## Run:
+1. change directory to ./Server:
+
 ```$ node .\app.js ```
-2. ./Client:
+
+2. change directory to ./Client:
+
 ```$ node .\app.js ```
 
 Open your browser and ~~VRAU~~ run the localhost for the Server(map) and the Client(search box)
@@ -36,5 +41,4 @@ Google APIs: javascript maps API, places API, geocoding API;
 [https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt](https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt)
 
 Socket.io API:
-npm install socket.io
 [https://socket.io/](https://socket.io/)
