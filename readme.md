@@ -1,38 +1,40 @@
-Criação de duas aplicações diferentes para comunicação;
+#**Geocode with sockets**
 
-Separadas como aplicação 
-    de Servidor :
-        .\geocodeSocket\Server
-    e Cliente :
-        .\geocodeSocket\Client
+For this project, two applications were created, each one with a screen;
 
-Requisitos:
-    node.js
+The screens are divided in:
+ * Server :
+    - .\geocodeSocket\Server
+ * Cliente :
+    - .\geocodeSocket\Client
 
-Executar na pasta de servidor
+
+Prerequisites for the project:
+- node
+
+When the project folder is open, you have to update the node_nodules:
+
+Change the dir. to the Server folder , and run the code bellow in the terminal:
 ```$ npm update ```
-Repita no client
+Repeat the process on Client folder
 
-Para executar:
-./Server:
+###Run:
+1. ./Server:
 ```$ node .\app.js ```
-./Client:
+2. ./Client:
 ```$ node .\app.js ```
 
-Abrir navegador e VRAU
-//Server
+Open your browser and ~~VRAU~~ run the localhost for the Server(map) and the Client(search box)
+
+**Server**
 [localhost:5000](http://localhost:5000)
-//Client
+
+**Client**
 [localhost:5001](http://localhost:5001)
 
-Instalação dos requisitos para funcionamento do socket.io:
-Necessário que o NODE.js esteja instalado
-Express Framework:
-$ npm install express --save
+Google APIs: javascript maps API, places API, geocoding API;
+[https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt](https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt)
 
-APIs do google: javascript maps API, places API, geocoding API;
-https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt
-
-API do socket.io:
+Socket.io API:
 npm install socket.io
-https://socket.io/
+[https://socket.io/](https://socket.io/)
