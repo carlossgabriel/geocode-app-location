@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.637);
+        }
+        #floating-panel {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+            
+        }
+        input {
+            border-radius: 4px;
+            box-shadow: 5px 5px 5px rgba(32, 2, 2, 0.226);
+            text-align: center;
+            margin: 5px 0px;
+        }       
+
+    </style>
+</head>
+
+<body>
+    <!-- Data Input -->
+    <div id="floating-panel">
+        <input id="address" type="textbox" placeholder="Insira o endereço aqui!">
+        <input id="submit" type="button" value="Buscar endereço">
+    </div>
+
+    <!-- Import socket.io-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript">
+        // Defines the path and port to connect the client on localhost server
+        var socket = io.connect('http://localhost:5000');
+
+        document.getElementById('submit').addEventListener('click', function () {
+            adress = document.getElementById('address').value
+            console.log(adress)
+            socket.emit('data', adress);
+        });
+    </script>
+
+</body>
+
+</html>
